@@ -63,7 +63,7 @@ class _LocationInputState extends State<LocationInput> {
           decoration:
               BoxDecoration(border: Border.all(width: 1, color: Colors.grey)),
           child: _previewImageUrl == null
-              ? Text(
+              ? const Text(
                   'No location choosen',
                   textAlign: TextAlign.center,
                 )
@@ -79,13 +79,13 @@ class _LocationInputState extends State<LocationInput> {
             FlatButton.icon(
               onPressed: _getUserLocation,
               icon: Icon(Icons.location_on),
-              label: Text('Current location'),
+              label: const Text('Current location'),
               textColor: Theme.of(context).primaryColor,
             ),
             FlatButton.icon(
               onPressed: _selectOnMap,
               icon: Icon(Icons.map),
-              label: Text('Select on Map'),
+              label: const Text('Select on Map'),
               textColor: Theme.of(context).primaryColor,
             ),
           ],

@@ -9,7 +9,7 @@ class PlacesListScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Your Places'),
+          title: const Text('Your Places'),
           actions: [
             IconButton(
                 icon: Icon(
@@ -33,7 +33,7 @@ class PlacesListScreen extends StatelessWidget {
                 )
               : Consumer<GreatPlaces>(
                   child: Center(
-                    child: const Text('Got no places yet'),
+                    child: const Text('Got no places yet, Start adding more!!!'),
                   ),
                   builder: (ctx, greatPlaces, ch) => greatPlaces.items.length <=
                           0

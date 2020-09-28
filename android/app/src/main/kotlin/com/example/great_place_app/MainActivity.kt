@@ -1,4 +1,4 @@
-package com.example.great_place_app
+package com.subranil.great_places
 
 import io.flutter.embedding.android.FlutterActivity
 

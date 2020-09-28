@@ -42,7 +42,7 @@ class PlaceDetailScreen extends StatelessWidget {
             height: 10,
           ),
           FlatButton(
-            child: Text('View on Map'),
+            child: const Text('View on Map'),
             textColor: Theme.of(context).primaryColor,
             onPressed: () {
               Navigator.of(context).push(
